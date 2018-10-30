@@ -1,0 +1,25 @@
+REST (Principles)
+
+- Resources (CRUD)
+  - name : plural. students, books
+
+- URL - HTTP Methods
+  - Create a new book : /api/v1/books : POST
+  - Update a book : /api/v1/books/<resource-id> : PUT
+  - Get a book : /api/v1/books/<resource-id> : GET
+  - Get all books : /api/v1/books : GET
+  - Delete a book : /api/v1/books/<resource-id> : DELETE
+  - Filter the books : /api/v1/books?title=Book1 : GET
+
+- Response codes
+  - Success
+    - POST : 201
+    - GET : 200
+    - PUT : 200
+    - DELETE : 204 or 200
+  - Error
+    - Client initiated error : 4xx
+    - Server initiated error : 5xx
+
+- Request/Response data formats
+  - JSON/XML
